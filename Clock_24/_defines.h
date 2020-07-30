@@ -21,10 +21,6 @@ int b=255;
 
 const char* ESP_HOST_NAME = "esp-" + ESP.getFlashChipId();
 
-//Your Wifi info
-const char* ssid    = "Home Server 2GHz";
-const char* password = "gefidalgo";
-
 //Your time zone
 int timezone = -3.0 * 3600;
 int dst = 0;

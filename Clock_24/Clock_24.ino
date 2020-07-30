@@ -8,28 +8,12 @@
 
 CRGB leds[NUM_LEDS];
 
-WiFiClient wifiClient;
-
-void connectWifi() 
-{
-  WiFi.begin(ssid, password);
-  Serial.print("Connecting to ");
-  Serial.println(ssid);
-  while (WiFi.status() != WL_CONNECTED) 
-  {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("");
-  Serial.println("WiFi connected!");
-  Serial.println(WiFi.localIP());
-  Serial.println();
-}
 
 void setup() {
   Serial.begin(115200);
   delay(500);
-  connectWifi();
+  Serial.println("-------Wifi Config Starting---------");
+  wifiInit();
   Serial.println();
   Serial.println("\n\nNext Loop-Step: " + String(millis()) + ":");
   configTime(timezone, dst, "pool.ntp.org","time.nist.gov");
