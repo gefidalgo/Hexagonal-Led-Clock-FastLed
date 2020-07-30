@@ -11,7 +11,7 @@ void wifiInit() {
   // Reset Prevoius WiFi Configuration
   wifiManager.resetSettings();
  
-  // Cremos ACcess Point and Captive Portal
-  wifiManager.autoConnect();
+  // Create ACcess Point and Captive Portal
+  wifiManager.autoConnect("Hexagonal Clock");
 
 }
