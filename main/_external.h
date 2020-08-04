@@ -1,4 +1,5 @@
 #include <FastLED.h>
+#include "arduino_secrets.h"
 #include "_defines.h"
 #include <ESP8266WiFi.h>
 #include "_wifiManager.h"
