@@ -9,7 +9,7 @@ void wifiInit() {
   WiFiManager wifiManager;
  
   // Reset Prevoius WiFi Configuration
-  wifiManager.resetSettings();
+  // wifiManager.resetSettings();
  
   // Create ACcess Point and Captive Portal
   wifiManager.autoConnect("Hexagonal Clock");
