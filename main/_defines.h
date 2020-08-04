@@ -30,8 +30,8 @@ const char* host = "pool.ntp.org";
 
 // ----------- Unsed for Blync Connection ------------------
 
-//The Auth token for Blynk. Add your own token here.
-char auth[] = "Blynk Token Goes Here";
-
 bool pingCheck = false,
      blynkConnected = false;
+
+//The Auth token for Blynk. Add your own token here.
+char auth[] = SECRET_AUTH;
